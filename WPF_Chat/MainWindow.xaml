@@ -102,13 +102,16 @@
                 
             </Button>
             
+            
+            
         </StackPanel>
     </StackPanel>
   
     <StackPanel>
-            <Button Margin="0,400,4,-25"
-                    Height="45"
-                    Width="675"/>
+            
+            <Label Margin="122,400,10,-25"
+                   Height="45"
+                   Width="605"/>
         </StackPanel>
     
     
