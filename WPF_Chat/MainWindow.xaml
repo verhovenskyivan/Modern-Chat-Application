@@ -90,7 +90,19 @@
                 <Image Source="./Icons/Video.png"/>
             
             </Button>
-        
+        <StackPanel Margin="0,370,0,-420"
+                    Background="#0813a6"
+                    >
+            <Button Margin="600,10,30,30"
+                    Height="30"
+                    Width="25"
+                    Background="Transparent"
+                    RenderSize="">
+                <Image Source = "./Icons/Clip.png"/>
+                
+            </Button>
+            
+        </StackPanel>
     </StackPanel>
   
     <StackPanel>
