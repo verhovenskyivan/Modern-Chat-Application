@@ -3,7 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WPF_Chat"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
         ResizeMode="NoResize">
@@ -90,28 +89,36 @@
                 <Image Source="./Icons/Video.png"/>
             
             </Button>
-        <StackPanel Margin="0,370,0,-420"
+        <StackPanel Margin="0,370,-10,-420"
                     Background="#0813a6"
                     >
-            <Button Margin="600,10,30,30"
+            <Button Margin="640,10,25,-30"
+                    Height="30"
+                    Width="25"
+                    Background="Transparent">
+                <Image Source ="Icons/Send.png"
+                       Stretch="Fill"
+                      />
+                
+            </Button>
+            <Button Margin="600,0,60,30"
                     Height="30"
                     Width="25"
                     Background="Transparent"
                     RenderSize="">
-                <Image Source = "./Icons/Clip.png"/>
+                <Image Source = "./Icons/Clip.png"
+                       Stretch="Uniform"/>
                 
             </Button>
-            
-            
             
         </StackPanel>
     </StackPanel>
   
     <StackPanel>
             
-            <Label Margin="122,400,10,-25"
+            <Label Margin="115,400,10,-30"
                    Height="45"
-                   Width="605"/>
+                   Width="600"/>
         </StackPanel>
     
     
