@@ -92,6 +92,11 @@
         <StackPanel Margin="0,370,-10,-420"
                     Background="#0813a6"
                     >
+            <TextBlock Margin="10,5,100,-45"
+                       Text="@message"
+                       Background="Transparent"/>
+                
+            
             <Button Margin="640,10,25,-30"
                     Height="30"
                     Width="25"
