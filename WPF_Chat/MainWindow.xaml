@@ -136,23 +136,23 @@
     <StackPanel Margin="0,30,80,-420"
                 Background="#0813a6"
                 Width="130"/>
-    <Button Content="Online"
+    <TextBlock Text="Online"
             Height="20"
             Width="40"
-            BorderThickness="0"
+           
             Background="Transparent"
             Foreground="Gray"
             FontWeight="Bold"
             Margin="-189,-30,-30,-80"
         />
-    <Button Content="Offline"
+    <TextBlock Text="Offline"
             Height="20"
             Width="45"
             Foreground="Gray"
             Background="Transparent"
             FontWeight="Bold"
-            BorderThickness="0"
-            Margin="-5,0,155,-440"
+          
+            Margin="0,0,155,-440"
             />
     </Grid>
     
