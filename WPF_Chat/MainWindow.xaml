@@ -21,12 +21,12 @@
            FontSize="12"
            FontWeight="SemiBold"
            VerticalAlignment="Top"
-           Background="#0b1278"
+           Background="#36393F"
            Foreground="White"
            Margin="0,0,80,0"/>
     
     <StackPanel Margin="120,0,-600,0"
-                Background="#0813a6">
+                Background="#36393F">
         <Button x:Name="CloseButton"
                 Margin="630,5,15,-30"
                 VerticalAlignment="Stretch"
@@ -67,7 +67,7 @@
     </StackPanel>
     <StackPanel 
                 Margin="120,30,-600,-30"
-                Background="#0813a6">
+                Background="#36393F">
         <Button x:Name="AudioCall"
                 Height="20"
                 Width="25"
@@ -90,27 +90,36 @@
             
             </Button>
         <StackPanel Margin="0,370,-10,-420"
-                    Background="#0813a6"
+                    Background="#36393F"
                     >
             <TextBlock Margin="10,5,100,-45"
                        Text="@message"
-                       Background="Transparent"/>
+                       Background="Gray"
+                       FontWeight="SemiBold"
+                       />
                 
             
             <Button Margin="640,10,25,-30"
                     Height="30"
                     Width="25"
-                    Background="Transparent">
+                    Background="Transparent"
+                    Foreground="Transparent"
+                    Padding="3"
+                    BorderThickness="0">
+                
                 <Image Source ="Icons/Send.png"
                        Stretch="Fill"
-                      />
+                />
                 
             </Button>
             <Button Margin="600,0,60,30"
                     Height="30"
                     Width="25"
                     Background="Transparent"
-                    RenderSize="">
+                    Foreground="Transparent"
+                    RenderSize=""
+                    Padding="3"
+                    BorderThickness="0">
                 <Image Source = "./Icons/Clip.png"
                        Stretch="Uniform"/>
                 
@@ -134,7 +143,7 @@
     
 
     <StackPanel Margin="0,30,80,-420"
-                Background="#0813a6"
+                Background="#36393F"
                 Width="130"/>
     <TextBlock Text="Online"
             Height="20"
@@ -142,7 +151,7 @@
            
             Background="Transparent"
             Foreground="Gray"
-            FontWeight="Bold"
+            FontWeight="SemiBold"
             Margin="-189,-30,-30,-80"
         />
     <TextBlock Text="Offline"
@@ -150,7 +159,7 @@
             Width="45"
             Foreground="Gray"
             Background="Transparent"
-            FontWeight="Bold"
+            FontWeight="SemiBold"
           
             Margin="0,0,155,-440"
             />
