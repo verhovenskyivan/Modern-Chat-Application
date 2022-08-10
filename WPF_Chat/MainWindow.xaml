@@ -94,8 +94,10 @@
                     >
             <TextBlock Margin="10,5,100,-45"
                        Text="@message"
+                       TextAlignment="Left"
                        Background="Gray"
                        FontWeight="SemiBold"
+                       Padding="5"
                        />
                 
             
@@ -112,16 +114,19 @@
                 />
                 
             </Button>
-            <Button Margin="600,0,60,30"
+            <Button x:Name="UploadButton"
+                    Margin="600,0,60,30"
                     Height="30"
-                    Width="25"
+                    Width="30"
                     Background="Transparent"
                     Foreground="Transparent"
-                    RenderSize=""
                     Padding="3"
-                    BorderThickness="0">
-                <Image Source = "./Icons/Clip.png"
-                       Stretch="Uniform"/>
+                    BorderThickness="0"
+                    Click="UploadButton_OnClick"
+                    >
+                <Image Source = "./Icons/plus.png"
+                       x:Name="imagePicture"
+                       Stretch="Fill"/>
                 
             </Button>
             

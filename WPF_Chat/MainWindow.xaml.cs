@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.Win32;
 
 namespace WPF_Chat
 {
@@ -38,6 +39,17 @@ namespace WPF_Chat
         private void MinimizeButton_Click(object sender, RoutedEventArgs e)
         {
             this.WindowState = WindowState.Minimized;
+        }
+
+        private void UploadButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openDialog = new OpenFileDialog();
+            openDialog.Filter = "Image Files|* .bmp;*. jpg;*.png;*.jpeg";
+            openDialog.FilterIndex = 1;
+            if (openDialog.ShowDialog() == true)
+            {
+                imagePicture.Source = new BitmapImage(new Uri(openDialog.FileName));
+            }
         }
     }
    
