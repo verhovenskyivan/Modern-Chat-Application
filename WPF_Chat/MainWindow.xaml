@@ -27,6 +27,7 @@
     
     <StackPanel Margin="120,0,-600,0"
                 Background="#36393F">
+        
         <Button x:Name="CloseButton"
                 Margin="630,5,15,-30"
                 VerticalAlignment="Stretch"
@@ -39,6 +40,7 @@
                 Foreground="Gray"
                 Content="X"
                 Click="CloseButton_Click"/> 
+        
         <Button x:Name ="MaximizeButton"
                 VerticalAlignment="Stretch"
                 HorizontalAlignment="Center"
@@ -51,6 +53,7 @@
                 Background="Transparent"
                 Foreground="Gray"
                 Click="MaximizeButton_Click"/>
+        
         <Button x:Name = "MinimizeButton"
                 VerticalAlignment="Stretch"
                 HorizontalAlignment="Center"
@@ -65,9 +68,11 @@
                 Click="MinimizeButton_Click"/>
        
     </StackPanel>
+    
     <StackPanel 
                 Margin="120,30,-600,-30"
                 Background="#36393F">
+        
         <Button x:Name="AudioCall"
                 Height="20"
                 Width="25"
@@ -76,8 +81,11 @@
                 Background="Transparent"
                 Padding="-3"
                 Margin="-150,-30,-680,-50">
+            
             <Image Source="./Icons/Audio.png"/>
+            
             </Button> 
+        
             <Button x:Name="VideoCall"
                     Height="20"
                     Width="25"
@@ -86,20 +94,21 @@
                     Background="Transparent"
                     Padding="-3"
                     Margin="-90,-30,-680,-50">
+                
                 <Image Source="./Icons/Video.png"/>
             
             </Button>
+        
         <StackPanel Margin="0,370,-10,-420"
-                    Background="#36393F"
-                    >
-            <TextBlock Margin="10,5,100,-45"
+                    Background="#36393F">
+            
+            <TextBlock Margin="0,5,100,-45"
                        Text="@message"
                        TextAlignment="Left"
                        Background="Gray"
                        FontWeight="SemiBold"
                        Padding="5"
-                       />
-                
+            />
             
             <Button Margin="640,10,25,-30"
                     Height="30"
@@ -110,10 +119,10 @@
                     BorderThickness="0">
                 
                 <Image Source ="Icons/Send.png"
-                       Stretch="Fill"
-                />
+                       Stretch="Fill"/>
                 
             </Button>
+            
             <Button x:Name="UploadButton"
                     Margin="600,0,60,30"
                     Height="30"
@@ -124,6 +133,7 @@
                     BorderThickness="0"
                     Click="UploadButton_OnClick"
                     >
+                
                 <Image Source = "./Icons/plus.png"
                        x:Name="imagePicture"
                        Stretch="Fill"/>
@@ -131,6 +141,7 @@
             </Button>
             
         </StackPanel>
+        
     </StackPanel>
   
     <StackPanel>
@@ -138,6 +149,7 @@
             <Label Margin="115,400,10,-30"
                    Height="45"
                    Width="600"/>
+            
         </StackPanel>
     
     
