@@ -8,26 +8,24 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\verhovensky\\.nuget\\packages\\": {}
+    "C:\\Users\\Verhovensky\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\verhovensky\\RiderProjects\\WPF_Chat\\WPF_Chat\\WPF_Chat.csproj",
+      "projectUniqueName": "C:\\Users\\Verhovensky\\RiderProjects\\Modern-Chat-Application\\WPF_Chat\\WPF_Chat.csproj",
       "projectName": "WPF_Chat",
-      "projectPath": "C:\\Users\\verhovensky\\RiderProjects\\WPF_Chat\\WPF_Chat\\WPF_Chat.csproj",
-      "packagesPath": "C:\\Users\\verhovensky\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\verhovensky\\RiderProjects\\WPF_Chat\\WPF_Chat\\obj\\",
+      "projectPath": "C:\\Users\\Verhovensky\\RiderProjects\\Modern-Chat-Application\\WPF_Chat\\WPF_Chat.csproj",
+      "packagesPath": "C:\\Users\\Verhovensky\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Verhovensky\\RiderProjects\\Modern-Chat-Application\\WPF_Chat\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\verhovensky\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Verhovensky\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0-windows"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -63,7 +61,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\Verhovensky\\.dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

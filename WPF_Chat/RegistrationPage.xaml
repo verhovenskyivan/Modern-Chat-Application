@@ -17,13 +17,26 @@
     
 </Grid.ColumnDefinitions>
         
-        <StackPanel>
-            <Border Background="White"
-                        Height="35"
-                        Width="220"
-                        BorderThickness="1"
-                        Margin="500,0,-300,60"
-                        />
-        </StackPanel>
+   
+            
+            <StackPanel Background="#36393F">
+                
+                <Button x:Name="LoginField"
+                        Margin="-10,150,0,0"
+                        Height="30"/>
+                
+                <Button x:Name="PasswordField"
+                        Margin="-10,50,0,0"
+                        Height="30"/>
+                
+                <Button x:Name="RegisterButton"
+                        Content="Register"
+                        Margin="-10,100,0,0"
+                        Height="25"
+                        Width="58"/>
+                
+            </StackPanel>
+        
     </Grid>
+    
 </Window>
