@@ -17,4 +17,9 @@ public partial class RegistrationPage : Window
             DragMove(); 
         }
     }
+
+    private void RegisterCloseButton_OnClick(object sender, RoutedEventArgs e)
+    {
+        Application.Current.Shutdown();
+    }
 }
