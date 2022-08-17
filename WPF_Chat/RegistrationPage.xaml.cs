@@ -22,4 +22,9 @@ public partial class RegistrationPage : Window
     {
         Application.Current.Shutdown();
     }
+
+    private void RegisterMinimizeButton_OnClick(object sender, RoutedEventArgs e)
+    {
+        this.WindowState = WindowState.Minimized;
+    }
 }
