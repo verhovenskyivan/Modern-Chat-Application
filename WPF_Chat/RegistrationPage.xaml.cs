@@ -27,4 +27,9 @@ public partial class RegistrationPage : Window
     {
         this.WindowState = WindowState.Minimized;
     }
+
+    private void RegisterMaximizeButton_OnClick(object sender, RoutedEventArgs e)
+    {
+        this.WindowState = WindowState.Maximized;
+    }
 }

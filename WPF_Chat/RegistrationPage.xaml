@@ -35,8 +35,21 @@
                             Content="X"
                             Click="RegisterCloseButton_OnClick"/>
                    
+                   <Button  x:Name="RegisterMaximizeButton"
+                            Margin="200,5,0,0"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Stretch"
+                            Height="20"
+                            Width="20"
+                            BorderThickness="0"
+                            FontWeight="Bold"
+                            Background="Transparent"
+                            Foreground="Gray"
+                            Content="⏍"
+                            Click="RegisterMaximizeButton_OnClick"/>
+                   
                    <Button  x:Name = "RegisterMinimizeButton"
-                            Margin="200,-25,0,-50"
+                            Margin="150,-70,0,-50"
                             VerticalAlignment="Center"
                             HorizontalAlignment="Stretch"
                             Height="20"
