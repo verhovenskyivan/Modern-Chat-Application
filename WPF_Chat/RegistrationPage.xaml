@@ -24,7 +24,7 @@
                 
                    <Button  x:Name="RegisterCloseButton"
                             Margin="250,-20,0,-50"
-                            VerticalAlignment="Stretch"
+                            VerticalAlignment="Center"
                             HorizontalAlignment="Center"
                             Height="20"
                             Width="20"
