@@ -73,9 +73,15 @@
                         Margin="-10,50,0,0"
                         Height="30"/>
                 
+                   <Button x:Name="LoginButton"
+                           Content="Login"
+                           Margin="-10,60,0,0"
+                           Height="25"
+                           Width="58"/>
+                   
                 <Button x:Name="RegisterButton"
                         Content="Register"
-                        Margin="-10,100,0,0"
+                        Margin="-10,20,0,0"
                         Height="25"
                         Width="58"/>
                 
