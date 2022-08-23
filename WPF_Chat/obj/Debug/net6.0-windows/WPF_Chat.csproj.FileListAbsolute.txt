@@ -44,3 +44,5 @@ C:\Users\Verhovensky\RiderProjects\Modern-Chat-Application\WPF_Chat\obj\Debug\ne
 C:\Users\Verhovensky\RiderProjects\Modern-Chat-Application\WPF_Chat\obj\Debug\net6.0-windows\WPF_Chat.pdb
 C:\Users\Verhovensky\RiderProjects\Modern-Chat-Application\WPF_Chat\obj\Debug\net6.0-windows\WPF_Chat.genruntimeconfig.cache
 C:\Users\Verhovensky\RiderProjects\Modern-Chat-Application\WPF_Chat\obj\Debug\net6.0-windows\ref\WPF_Chat.dll
+C:\Users\verhovensky\RiderProjects\Modern-Chat-Application\WPF_Chat\obj\Debug\net6.0-windows\LoginPage.g.cs
+C:\Users\verhovensky\RiderProjects\Modern-Chat-Application\WPF_Chat\obj\Debug\net6.0-windows\LoginPage.baml

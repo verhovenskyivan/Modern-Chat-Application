@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Verhovensky\\RiderProjects\\Modern-Chat-Application\\WPF_Chat\\WPF_Chat.csproj": {}
+    "C:\\Users\\verhovensky\\RiderProjects\\Modern-Chat-Application\\WPF_Chat\\WPF_Chat.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Verhovensky\\RiderProjects\\Modern-Chat-Application\\WPF_Chat\\WPF_Chat.csproj": {
+    "C:\\Users\\verhovensky\\RiderProjects\\Modern-Chat-Application\\WPF_Chat\\WPF_Chat.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Verhovensky\\RiderProjects\\Modern-Chat-Application\\WPF_Chat\\WPF_Chat.csproj",
+        "projectUniqueName": "C:\\Users\\verhovensky\\RiderProjects\\Modern-Chat-Application\\WPF_Chat\\WPF_Chat.csproj",
         "projectName": "WPF_Chat",
-        "projectPath": "C:\\Users\\Verhovensky\\RiderProjects\\Modern-Chat-Application\\WPF_Chat\\WPF_Chat.csproj",
-        "packagesPath": "C:\\Users\\Verhovensky\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Verhovensky\\RiderProjects\\Modern-Chat-Application\\WPF_Chat\\obj\\",
+        "projectPath": "C:\\Users\\verhovensky\\RiderProjects\\Modern-Chat-Application\\WPF_Chat\\WPF_Chat.csproj",
+        "packagesPath": "C:\\Users\\verhovensky\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\verhovensky\\RiderProjects\\Modern-Chat-Application\\WPF_Chat\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Verhovensky\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\verhovensky\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0-windows"
@@ -43,7 +43,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -55,7 +56,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\Verhovensky\\.dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\verhovensky\\.dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
