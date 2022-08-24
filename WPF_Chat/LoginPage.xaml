@@ -5,13 +5,13 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:WPF_Chat"
       mc:Ignorable="d"
-      Title="LoginPage" Height="450" Width="300">
+      Title="LoginPage" Height="250" Width="500">
                   
     <StackPanel Background="#36393F">
               
                 
                    <Button  x:Name="LoginCloseButton"
-                            Margin="250,-20,0,-50"
+                            Margin="400,-20,0,-50"
                             VerticalAlignment="Center"
                             HorizontalAlignment="Center"
                             Height="20"
@@ -24,7 +24,7 @@
                             Click="LoginCloseButton_OnClick"/>
                    
                    <Button  x:Name="LoginMaximizeButton"
-                            Margin="200,5,0,0"
+                            Margin="350,5,0,0"
                             VerticalAlignment="Center"
                             HorizontalAlignment="Stretch"
                             Height="20"
@@ -37,7 +37,7 @@
                             Click="LoginMaximizeButton_OnClick"/>
                    
                    <Button  x:Name = "LoginMinimizeButton"
-                            Margin="150,-70,0,-50"
+                            Margin="300,-70,0,-50"
                             VerticalAlignment="Center"
                             HorizontalAlignment="Stretch"
                             Height="20"
@@ -54,22 +54,24 @@
              
                 
                 <Button x:Name="LoginField"
-                        Margin="-10,150,0,0"
-                        Height="30"/>
+                        Margin="-240,50,0,0"
+                        Height="30"
+                        Width="250"/>
                 
                 <Button x:Name="PasswordField"
-                        Margin="-10,50,0,0"
-                        Height="30"/>
+                        Margin="-190,50,0,0"
+                        Height="30"
+                        Width="300"/>
                 
                    <Button x:Name="LoginButton"
                            Content="Login"
-                           Margin="-10,60,0,0"
+                           Margin="200,30,0,0"
                            Height="25"
                            Width="58"/>
                    
                 <Button x:Name="RegisterButton"
                         Content="Register"
-                        Margin="-10,20,0,0"
+                        Margin="390,-25,0,0"
                         Height="25"
                         Width="58"/>
                 
