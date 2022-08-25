@@ -11,7 +11,7 @@
               
                 
                    <Button  x:Name="LoginCloseButton"
-                            Margin="400,-20,0,-50"
+                            Margin="480,-20,0,-50"
                             VerticalAlignment="Center"
                             HorizontalAlignment="Center"
                             Height="20"
@@ -24,7 +24,7 @@
                             Click="LoginCloseButton_OnClick"/>
                    
                    <Button  x:Name="LoginMaximizeButton"
-                            Margin="350,5,0,0"
+                            Margin="440,5,0,0"
                             VerticalAlignment="Center"
                             HorizontalAlignment="Stretch"
                             Height="20"
@@ -37,7 +37,7 @@
                             Click="LoginMaximizeButton_OnClick"/>
                    
                    <Button  x:Name = "LoginMinimizeButton"
-                            Margin="300,-70,0,-50"
+                            Margin="400,-70,0,-50"
                             VerticalAlignment="Center"
                             HorizontalAlignment="Stretch"
                             Height="20"
