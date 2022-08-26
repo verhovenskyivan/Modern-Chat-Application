@@ -31,4 +31,19 @@ public partial class LoginPage : Page
         this.WindowState = WindowState.Minimized;
         this.Cursor = Cursors.Hand;
     }
+
+    private void LoginField_OnMouseLeave(object sender, MouseEventArgs e)
+    {
+        
+    }
+
+    private void UIElement_OnMouseMove(object sender, MouseEventArgs e)
+    {
+      
+    }
+
+    private void LoginField_OnMouseEnter(object sender, MouseEventArgs e)
+    {
+       
+    }
 }

@@ -7,7 +7,8 @@
       mc:Ignorable="d"
       Title="LoginPage" Height="250" Width="500">
                   
-    <StackPanel Background="#36393F">
+    <StackPanel Background="#36393F"
+                MouseMove="UIElement_OnMouseMove">
               
                 
                    <Button  x:Name="LoginCloseButton"
@@ -56,7 +57,9 @@
                 <Button x:Name="LoginField"
                         Margin="-240,50,0,0"
                         Height="30"
-                        Width="250"/>
+                        Width="250"
+                        MouseLeave="LoginField_OnMouseLeave"
+                        MouseEnter="LoginField_OnMouseEnter"/>
                 
                 <Button x:Name="PasswordField"
                         Margin="-190,50,0,0"
