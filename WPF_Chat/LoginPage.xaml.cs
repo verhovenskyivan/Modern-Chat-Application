@@ -46,4 +46,17 @@ public partial class LoginPage : Page
     {
        
     }
+
+    private void LoginButton_OnClick(object sender, RoutedEventArgs e)
+    {
+    
+        this.Content = MainWindow;
+    }
+
+    public object MainWindow { get; set; }
+
+    private void RegisterButton_OnClick(object sender, RoutedEventArgs e)
+    {
+        
+    }
 }

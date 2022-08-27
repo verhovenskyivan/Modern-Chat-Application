@@ -70,13 +70,15 @@
                            Content="Login"
                            Margin="200,30,0,0"
                            Height="25"
-                           Width="58"/>
+                           Width="58"
+                           Click="LoginButton_OnClick"/>
                    
                 <Button x:Name="RegisterButton"
                         Content="Register"
                         Margin="390,-25,0,0"
                         Height="25"
-                        Width="58"/>
+                        Width="58"
+                        Click="RegisterButton_OnClick"/>
                 
             </StackPanel>
     
