@@ -51,6 +51,11 @@ namespace WPF_Chat
                 imagePicture.Source = new BitmapImage(new Uri(openDialog.FileName));
             }
         }
+
+        private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
    
 }

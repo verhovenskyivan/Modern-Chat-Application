@@ -59,4 +59,9 @@ public partial class LoginPage : Page
     {
         
     }
+
+    private void PasswordField_OnClick(object sender, RoutedEventArgs e)
+    {
+        throw new System.NotImplementedException();
+    }
 }

@@ -116,7 +116,8 @@
                     Background="Transparent"
                     Foreground="Transparent"
                     Padding="3"
-                    BorderThickness="0">
+                    BorderThickness="0"
+                    Click="ButtonBase_OnClick">
                 
                 <Image Source ="Icons/Send.png"
                        Stretch="Fill"/>
