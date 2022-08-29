@@ -57,11 +57,11 @@ public partial class LoginPage : Page
 
     private void RegisterButton_OnClick(object sender, RoutedEventArgs e)
     {
-        
+        this.Content = LoginField;
     }
 
     private void PasswordField_OnClick(object sender, RoutedEventArgs e)
     {
-        throw new System.NotImplementedException();
+        
     }
 }
