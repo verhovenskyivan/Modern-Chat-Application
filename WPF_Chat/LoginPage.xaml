@@ -55,24 +55,35 @@
              
                 
                 <Button x:Name="LoginField"
-                        Margin="-240,50,0,0"
+                        Margin="-190,50,0,0"
                         Height="30"
-                        Width="250"
+                        Width="300"
                         MouseLeave="LoginField_OnMouseLeave"
                         MouseEnter="LoginField_OnMouseEnter"/>
                 
                 <Button x:Name="PasswordField"
-                        Margin="-190,50,0,0"
+                        Margin="-190,30,0,0"
                         Height="30"
                         Width="300"
                         Click="PasswordField_OnClick"/>
                 
                    <Button x:Name="LoginButton"
                            Content="Login"
-                           Margin="200,30,0,0"
-                           Height="25"
-                           Width="58"
-                           Click="LoginButton_OnClick"/>
+                           Margin="50,30,0,0"
+                           Height="30"
+                           Width="70"
+                           Click="LoginButton_OnClick"
+                          >
+                       <Button.Template>
+                           <ControlTemplate TargetType="{x:Type Button}">
+                               <Grid>
+                                   <Ellipse Fill="White">
+                                   </Ellipse>
+                               </Grid>
+                           </ControlTemplate>
+                       </Button.Template>
+                      
+                   </Button>
                    
                 <Button x:Name="RegisterButton"
                         Content="Register"
