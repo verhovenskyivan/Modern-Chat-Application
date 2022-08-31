@@ -78,11 +78,14 @@
                            <ControlTemplate TargetType="{x:Type Button}">
                                <Grid>
                                    <Ellipse Fill="White">
+                                       
                                    </Ellipse>
+                                   
                                </Grid>
                            </ControlTemplate>
+                           
                        </Button.Template>
-                      
+                       
                    </Button>
                    
                 <Button x:Name="RegisterButton"

@@ -20,20 +20,19 @@
    
             
             <StackPanel Background="#36393F">
-              
                 
-                   <Button  x:Name="RegisterCloseButton"
-                            Margin="250,-20,0,-50"
-                            VerticalAlignment="Center"
-                            HorizontalAlignment="Center"
-                            Height="20"
-                            Width="20"
-                            BorderThickness="0"
-                            FontWeight="Bold"
-                            Background="Transparent"
-                            Foreground="Gray"
-                            Content="X"
-                            Click="RegisterCloseButton_OnClick"/>
+                <Button  x:Name="RegisterCloseButton"
+                         Margin="250,-20,0,-50"
+                         VerticalAlignment="Center"
+                         HorizontalAlignment="Center"
+                         Height="20"
+                         Width="20"
+                         BorderThickness="0"
+                         FontWeight="Bold"
+                         Background="Transparent"
+                         Foreground="Gray"
+                         Content="X"
+                         Click="RegisterCloseButton_OnClick"/>
                    
                    <Button  x:Name="RegisterMaximizeButton"
                             Margin="200,5,0,0"
@@ -62,11 +61,14 @@
                             Click="RegisterMinimizeButton_OnClick"/>
                    
                   
-                   
+                <TextBlock Text="Welcome to Verhovensky chat"
+                           Margin="70,100,0,10"
+                           Background="Transparent"
+                />
              
                 
                 <Button x:Name="LoginField"
-                        Margin="-10,150,0,0"
+                        Margin="-10,50,0,0"
                         Height="30"/>
                 
                 <Button x:Name="PasswordField"
