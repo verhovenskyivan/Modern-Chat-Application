@@ -69,28 +69,17 @@
                 
                    <Button x:Name="LoginButton"
                            Content="Login"
-                           Margin="50,30,0,0"
-                           Height="30"
-                           Width="70"
+                           Margin="50,10,0,0"
+                           Height="25"
+                           Width="58"
                            Click="LoginButton_OnClick"
                           >
-                       <Button.Template>
-                           <ControlTemplate TargetType="{x:Type Button}">
-                               <Grid>
-                                   <Ellipse Fill="White">
-                                       
-                                   </Ellipse>
-                                   
-                               </Grid>
-                           </ControlTemplate>
-                           
-                       </Button.Template>
                        
                    </Button>
                    
                 <Button x:Name="RegisterButton"
                         Content="Register"
-                        Margin="390,-25,0,0"
+                        Margin="50,5,0,0"
                         Height="25"
                         Width="58"
                         Click="RegisterButton_OnClick"/>
