@@ -77,13 +77,19 @@
                 
                    <Button x:Name="LoginButton"
                            Content="Login"
-                           Margin="-10,60,0,0"
+                           Margin="-10,9,0,0"
                            Height="25"
                            Width="58"/>
-                   
+                
+                   <Button x:Name="HelpButton"
+                           Content="Help"
+                           Margin="-10,70,0,0"
+                           Height="25"
+                           Width="58"/>
+                
                 <Button x:Name="RegisterButton"
                         Content="Register"
-                        Margin="-10,20,0,0"
+                        Margin="-10,-120,0,0"
                         Height="25"
                         Width="58"/>
                 
