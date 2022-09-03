@@ -7,7 +7,7 @@
       mc:Ignorable="d"
       Title="LoginPage" Height="250" Width="500">
                   
-    <StackPanel Background="#36393F"
+    <g Background="#36393F"
                 MouseMove="UIElement_OnMouseMove">
               
                 
@@ -84,6 +84,6 @@
                         Width="58"
                         Click="RegisterButton_OnClick"/>
                 
-            </StackPanel>
+            </g>
     
 </Page>

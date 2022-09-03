@@ -69,11 +69,14 @@
                 
                 <Button x:Name="LoginField"
                         Margin="-10,50,0,0"
-                        Height="30"/>
+                        Height="30"
+                        Content="@Login"/>
                 
                 <Button x:Name="PasswordField"
                         Margin="-10,50,0,0"
-                        Height="30"/>
+                        Height="30"
+                        Content="@Password"
+                        />
                 
                    <Button x:Name="LoginButton"
                            Content="Login"
