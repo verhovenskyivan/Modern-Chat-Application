@@ -80,7 +80,7 @@
                 Foreground="Transparent"
                 Background="Transparent"
                 Padding="-3"
-                Margin="-150,-30,-680,-50">
+                Margin="-150,-30,-710,-50">
             
             <Image Source="./Icons/Audio.png"/>
             
@@ -93,7 +93,7 @@
                     Foreground="Transparent"
                     Background="Transparent"
                     Padding="-3"
-                    Margin="-90,-30,-680,-50">
+                    Margin="-90,-30,-720,-50">
                 
                 <Image Source="./Icons/Video.png"/>
             
