@@ -2,6 +2,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 
+
 namespace WPF_Chat;
 
 public partial class LoginPage : Page
