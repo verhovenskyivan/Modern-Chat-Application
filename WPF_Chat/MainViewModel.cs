@@ -16,5 +16,14 @@ public class MainViewModel
     {
         Messages = new ObservableCollection<MessageModel>();
         Contacts = new ObservableCollection<ContactModel>();
-    }
+
+        Messages.Add(new MessageModel()
+        {
+            Username = "Tim Cook",
+            UsernameColor = "#409aff",
+            Message = "Test",
+            Time = DateTime.Now,
+            FirstMessage = true
+        });
+}
 }
