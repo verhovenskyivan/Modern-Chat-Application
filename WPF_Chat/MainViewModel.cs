@@ -25,5 +25,14 @@ public class MainViewModel
             Time = DateTime.Now,
             FirstMessage = true
         });
+        
+        Messages.Add(new MessageModel()
+        {
+            Username = "Steve Jobs",
+            UsernameColor = "#409aff",
+            Message = "Test last",
+            Time = DateTime.Now,
+            FirstMessage = false
+        });
 }
 }
