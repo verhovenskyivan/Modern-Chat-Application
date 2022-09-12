@@ -34,5 +34,14 @@ public class MainViewModel
             Time = DateTime.Now,
             FirstMessage = false
         });
+
+        for (int i = 0; i < 5; i++)
+        {
+            Contacts.Add(new ContactModel()
+            {
+                Username = "Steve Jobs",
+                Messages = Messages
+            });
+        }
 }
 }
