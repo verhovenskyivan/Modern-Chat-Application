@@ -29,16 +29,19 @@ namespace WPF_Chat
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
+            this.Cursor = Cursors.Hand;
         }
 
         private void MaximizeButton_Click(object sender, RoutedEventArgs e)
         {
             this.WindowState = WindowState.Maximized;
+            this.Cursor = Cursors.Hand;
         }
 
         private void MinimizeButton_Click(object sender, RoutedEventArgs e)
         {
             this.WindowState = WindowState.Minimized;
+            this.Cursor = Cursors.Hand;
         }
 
         private void UploadButton_OnClick(object sender, RoutedEventArgs e)
@@ -50,6 +53,7 @@ namespace WPF_Chat
             {
                 imagePicture.Source = new BitmapImage(new Uri(openDialog.FileName));
             }
+            this.Cursor = Cursors.Hand;
         }
 
         private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
