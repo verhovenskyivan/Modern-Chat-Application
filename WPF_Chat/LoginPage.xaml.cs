@@ -40,7 +40,7 @@ public partial class LoginPage : Page
 
     private void UIElement_OnMouseMove(object sender, MouseEventArgs e)
     {
-      
+        this.Cursor = Cursors.No;
     }
 
     private void LoginField_OnMouseEnter(object sender, MouseEventArgs e)
