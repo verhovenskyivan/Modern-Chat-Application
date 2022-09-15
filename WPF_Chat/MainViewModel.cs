@@ -22,6 +22,7 @@ public class MainViewModel
             Username = "Tim Cook",
             UsernameColor = "#409aff",
             Message = "Test",
+            imageSource = "./icons/Tim.jpg",
             Time = DateTime.Now,
             FirstMessage = true
         });
@@ -40,6 +41,7 @@ public class MainViewModel
             Contacts.Add(new ContactModel()
             {
                 Username = "Steve Jobs",
+                ImageSource = "./icons/Steve.jpg",
                 Messages = Messages
             });
         }
