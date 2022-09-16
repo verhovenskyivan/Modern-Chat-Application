@@ -33,10 +33,11 @@ public class MainViewModel
             UsernameColor = "#409aff",
             Message = "Test last",
             Time = DateTime.Now,
+            imageSource = "./icons/Steve.jpg",
             FirstMessage = false
         });
 
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 3; i++)
         {
             Contacts.Add(new ContactModel()
             {

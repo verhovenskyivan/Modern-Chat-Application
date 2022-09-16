@@ -1,6 +1,8 @@
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Navigation;
 
 
 namespace WPF_Chat;
@@ -50,15 +52,20 @@ public partial class LoginPage : Page
 
     private void LoginButton_OnClick(object sender, RoutedEventArgs e)
     {
-    
-        this.Content = MainWindow;
+       MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
+       mainWindow.Visibility = Visibility.Visible;
+       Window win = (Window)this.Parent;
+       win.Close();
     }
 
     public object MainWindow { get; set; }
 
     private void RegisterButton_OnClick(object sender, RoutedEventArgs e)
     {
-        this.Content = LoginField;
+        NavigationWindow register = new NavigationWindow();
+        register.Source = new Uri("RegistrationPage", UriKind.Relative);
+        register.Show();
+        this.Visibility = Visibility.Visible;
     }
 
     private void PasswordField_OnClick(object sender, RoutedEventArgs e)
