@@ -30,7 +30,7 @@ public class MainViewModel
         Messages.Add(new MessageModel()
         {
             Username = "Steve Jobs",
-            UsernameColor = "#409aff",
+            UsernameColor =  "#white",
             Message = "Test last",
             Time = DateTime.Now,
             imageSource = "./icons/Steve.jpg",
