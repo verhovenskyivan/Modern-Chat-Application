@@ -14,7 +14,7 @@ public partial class RegistrationPage : Window
     {
         if (e.LeftButton == MouseButtonState.Pressed)
         {
-            DragMove(); 
+            DragMove();
         }
     }
 

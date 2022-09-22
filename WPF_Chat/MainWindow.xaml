@@ -24,11 +24,16 @@
            Background="#36393F"
            Foreground="White"
            Margin="0,0,80,0"/>
+                 
+          
     
-    <StackPanel Margin="120,0,-600,0"
-                Background="#36393F">
+    <StackPanel 
+                Margin="120,0,-600,-30"
         
-        <Button x:Name="CloseButton"
+                Background="#36393F">
+
+
+            <Button x:Name="CloseButton"
                 Margin="650,0,5,-30"
                 VerticalAlignment="Stretch"
                 HorizontalAlignment="Center"
@@ -39,9 +44,9 @@
                 Background="Transparent"
                 Foreground="Gray"
                 Content="X"
-                Click="CloseButton_Click"/> 
-        
-        <Button x:Name ="MaximizeButton"
+                Click="CloseButton_Click"/>
+
+            <Button x:Name ="MaximizeButton"
                 VerticalAlignment="Stretch"
                 HorizontalAlignment="Center"
                 Content = "🗖"
@@ -53,8 +58,8 @@
                 Background="Transparent"
                 Foreground="Gray"
                 Click="MaximizeButton_Click"/>
-        
-        <Button x:Name = "MinimizeButton"
+
+            <Button x:Name = "MinimizeButton"
                 VerticalAlignment="Stretch"
                 HorizontalAlignment="Center"
                 Content="_"
@@ -66,14 +71,8 @@
                 Background="Transparent"
                 Foreground="Gray"
                 Click="MinimizeButton_Click"/>
-       
-    </StackPanel>
-    
-    <StackPanel 
-                Margin="120,30,-600,-30"
-                Background="#36393F">
-        
-        <Button x:Name="AudioCall"
+
+            <Button x:Name="AudioCall"
                 Height="20"
                 Width="25"
                 BorderThickness="0"
@@ -99,9 +98,9 @@
             
             </Button>
         
-        <StackPanel Margin="0,370,0,-420"
+        <StackPanel Margin="-5,375,0,-400"
                     Height="50"
-                    Width="680"
+                    Width="685"
                     Background="#36393F">
             
             <TextBlock Margin="0,5,100,-45"
