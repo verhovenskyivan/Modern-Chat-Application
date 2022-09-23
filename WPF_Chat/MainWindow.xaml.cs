@@ -68,6 +68,11 @@ namespace WPF_Chat
                 DragMove(); 
             }
         }
+
+        private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
    
 }
