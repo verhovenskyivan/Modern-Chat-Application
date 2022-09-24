@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -13,6 +14,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Win32;
+using AForge.Video;
+using System.Security.Cryptography.X509Certificates;
 
 namespace WPF_Chat
 {
@@ -70,9 +73,54 @@ namespace WPF_Chat
         }
 
         private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+                  
+           
+        {
+            [DllImport("winmm.dll", EntryPoint = "mciSendStringA", CharSet = CharSet.Ansi, SetLastError = true, ExactSpelling = true)]
+             static extern int mciSendString(string lpstrCommand, string lpstrReturnString, int uReturnLength, int hwndCallback);
+
+            static void Main(string[] args)
+            {
+                mciSendString("open new Type waveaudio Alias recsound", "", 0, 0);
+                mciSendString("record recsound", "", 0, 0);
+                Console.WriteLine("recording, press Enter to stop and save ...");
+                Console.ReadLine();
+
+                mciSendString("save recsound c:\\work\\result.wav", "", 0, 0);
+                mciSendString("close recsound ", "", 0, 0);
+            }
+        }
+
+        public partial class Form1 : Form
         {
 
+            MJPEGStream stream;
+            public Form1()
+            {
+                InitializeComponent();
+                stream = new MJPEGStream("http://192.168.1.120/action/stream?subject=mjpeg&user=admin&pwd=12345");
+                stream.NewFrame += GetNewFrame;
+
+            }
+
+            void GetNewFrame(object sender, NewFrameEventArgs eventarg)
+            {
+                Bitmap bmp = (Bitmap)eventarg.Frame.Clone();
+                pictureBox1.Image = bmp;
+            }
+
+            private void Image_MouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
+            {
+            
+            }
         }
+        }
+
+    public class Form
+    {
     }
-   
 }
+ 
+    
+   
+

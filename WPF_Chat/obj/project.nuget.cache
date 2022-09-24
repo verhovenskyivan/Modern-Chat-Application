@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "PzVuUFqtsKt7qSj+7FCgfBF7oW6e26FHL1uPaBw2WFf6cKam9hdpQa9BIv701Lq09JPzDIL4tVgMWUXpoQtKjw==",
+  "dgSpecHash": "86MxlM+lKnHb6oEzlmFu86jKGa+VkQ7Xkh8/KyRk2WcAM1trtHKw/x9nZBWUsx9Dw7YX5yXv+6FIcJujGvPliQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\verhovensky\\RiderProjects\\Modern-Chat-Application\\WPF_Chat\\WPF_Chat.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\verhovensky\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\verhovensky\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
