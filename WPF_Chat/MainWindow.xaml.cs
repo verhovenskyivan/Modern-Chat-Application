@@ -16,6 +16,7 @@ using System.Windows.Shapes;
 using Microsoft.Win32;
 using AForge.Video;
 using System.Security.Cryptography.X509Certificates;
+using System.Drawing;
 
 namespace WPF_Chat
 {
@@ -97,10 +98,15 @@ namespace WPF_Chat
             MJPEGStream stream;
             public Form1()
             {
-                InitializeComponent();
+                Initializecomponent();
                 stream = new MJPEGStream("http://192.168.1.120/action/stream?subject=mjpeg&user=admin&pwd=12345");
                 stream.NewFrame += GetNewFrame;
 
+            }
+
+            private void Initializecomponent()
+            {
+                throw new NotImplementedException();
             }
 
             void GetNewFrame(object sender, NewFrameEventArgs eventarg)
@@ -111,7 +117,7 @@ namespace WPF_Chat
 
             private void Image_MouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
             {
-            
+                stream.Start();
             }
         }
         }
