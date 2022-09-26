@@ -84,4 +84,15 @@ public partial class LoginPage : Page
     {
         throw new System.NotImplementedException();
     }
+
+    private void LoginButton_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+    {
+        
+    }
+
+    private void RegisterButton_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+    {
+        LoginPage page = new LoginPage();
+        this.Content = page;
+    }
 }
