@@ -87,7 +87,8 @@ public partial class LoginPage : Page
 
     private void LoginButton_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
     {
-        
+        MainWindow mainWindow = new MainWindow();
+        this.Content = mainWindow;
     }
 
     private void RegisterButton_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)

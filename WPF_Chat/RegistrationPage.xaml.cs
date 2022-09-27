@@ -32,4 +32,9 @@ public partial class RegistrationPage : Window
     {
         this.WindowState = WindowState.Maximized;
     }
+
+    private void LoginButton_MouseLeftButtonDown()
+    {
+
+    }
 }
