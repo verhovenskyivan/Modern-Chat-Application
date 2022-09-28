@@ -33,8 +33,9 @@ public partial class RegistrationPage : Window
         this.WindowState = WindowState.Maximized;
     }
 
-    private void LoginButton_MouseLeftButtonDown()
+    private void LoginButton_MouseLeftButtonDown(object sender, MouseButtonEventArgs e, object loginPage)
     {
-
+      RegistrationPage page = new RegistrationPage();
+        this.Content = loginPage;
     }
 }
