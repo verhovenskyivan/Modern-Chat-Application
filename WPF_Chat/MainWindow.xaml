@@ -15,7 +15,7 @@
             <ColumnDefinition Width="200"/>
         </Grid.ColumnDefinitions>
 
-    <Label Height="30"
+        <Label Height="30"
            Width="120"
            Content="Chats"
            FontSize="12"
@@ -24,10 +24,10 @@
            Background="#36393F"
            Foreground="White"
            Margin="0,0,80,0"/>
-                 
-          
-    
-    <StackPanel 
+
+
+
+        <StackPanel 
                 Margin="120,0,-600,-30"
         
                 Background="#36393F">
@@ -80,11 +80,11 @@
                 Background="Transparent"
                 Padding="-3"
                 Margin="-150,-20,-710,-50">
-            
-            <Image Source="./Icons/Audio.png" Cursor="Hand"/>
-            
-            </Button> 
-        
+
+                <Image Source="./Icons/Audio.png" Cursor="Hand"/>
+
+            </Button>
+
             <Button x:Name="VideoCall"
                     Height="20"
                     Width="25"
@@ -93,17 +93,17 @@
                     Background="Transparent"
                     Padding="-3"
                     Margin="-90,-20,-720,-50">
-                
+
                 <Image Source="./Icons/Video.png" Cursor="Hand" MouseLeftButtonDown="Image_MouseLeftButtonDown_1"/>
-            
+
             </Button>
-        
-        <StackPanel Margin="-5,375,0,-400"
+
+            <StackPanel Margin="-5,375,0,-400"
                     Height="50"
                     Width="685"
                     Background="#36393F">
-            
-            <TextBlock Margin="0,5,100,-45"
+
+                <TextBlock Margin="0,5,100,-45"
                        Height="40"
                        Text="@message"
                        TextAlignment="Left"
@@ -111,8 +111,8 @@
                        FontWeight="SemiBold"
                        Padding="5"
             />
-            
-            <Button Margin="600,10,15,-30"
+
+                <Button Margin="600,10,15,-30"
                     Height="30"
                     Width="25"
                     Background="Transparent"
@@ -120,13 +120,13 @@
                     Padding="3"
                     BorderThickness="0"
                     Click="ButtonBase_OnClick">
-                
-                <Image Source ="Icons/Send.png"
+
+                    <Image Source ="Icons/Send.png"
                        Stretch="Fill" Cursor="Hand"/>
-                
-            </Button>
-            
-            <Button x:Name="UploadButton"
+
+                </Button>
+
+                <Button x:Name="UploadButton"
                     Margin="470,0,20,30"
                     Height="30"
                     Width="30"
@@ -135,12 +135,12 @@
                     BorderThickness="0"
                     Click="UploadButton_OnClick"
                     >
-                
-                <Image Source = "./Icons/plus.png"
+
+                    <Image Source = "./Icons/plus.png"
                        x:Name="imagePicture"
                        Stretch="Fill" RenderTransformOrigin="1.667,0.502" Width="30" Cursor="Hand"/>
-                
-            </Button>
+
+                </Button>
 
                 <Button Margin="545,-120,25,-30"
                     Height="33"
@@ -153,27 +153,27 @@
 
                     <Image Source="./icons/VoiceMessage.png"
                            Stretch="Fill" Cursor="Hand" MouseLeftButtonDown="Image_MouseLeftButtonDown"/>
-             
-                   
+
+
                 </Button>
 
             </StackPanel>
-        
-    </StackPanel>
-  
-    <StackPanel Margin="0,0,77,4">
-            
+
+        </StackPanel>
+
+        <StackPanel Margin="0,0,77,4">
+
             <Label Margin="115,400,10,-30"
                    Height="45"
                    Width="600"/>
-            
-        </StackPanel>
-    
 
-    <StackPanel Margin="0,30,80,-420"
+        </StackPanel>
+
+
+        <StackPanel Margin="0,30,80,-420"
                 Background="#36393F"
                 Width="130"/>
-    <TextBlock Text="Online"
+        <TextBlock Text="Online"
             Height="20"
             Width="40"
            
@@ -182,7 +182,7 @@
             FontWeight="SemiBold"
             Margin="-189,-30,-30,-80"
         />
-    <TextBlock Text="Offline"
+        <TextBlock Text="Offline"
             Height="20"
             Width="45"
             Foreground="Gray"
@@ -191,6 +191,8 @@
           
             Margin="0,-150,0,-200"
             />
+        <TextBlock Margin="120,60,-600,-369"
+                   Background="Gray"/>
     </Grid>
-    
+
 </Window>
