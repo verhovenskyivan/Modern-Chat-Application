@@ -13,6 +13,8 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="73*"/>
+            <ColumnDefinition Width="127*"/>
         </Grid.ColumnDefinitions>
 
         <Label Height="30"
@@ -20,7 +22,7 @@
            Content="Chats"
            FontSize="12"
            FontWeight="SemiBold"
-           VerticalAlignment="Top"
+           VerticalAlignment="Center"
            Background="#36393F"
            Foreground="White"
            Margin="0,0,80,0"/>
@@ -28,9 +30,9 @@
 
 
         <StackPanel 
-                Margin="120,0,-600,-30"
+                Margin="120,0,0,-30"
         
-                Background="#36393F">
+                Background="#36393F" Grid.ColumnSpan="3">
 
 
             <Button x:Name="CloseButton"
@@ -94,7 +96,7 @@
                     Padding="-3"
                     Margin="-90,-20,-720,-50">
 
-                <Image Source="./Icons/Video.png" Cursor="Hand" MouseLeftButtonDown="Image_MouseLeftButtonDown_1"/>
+                <Image Source="./Icons/Video.png" Cursor="Hand"/>
 
             </Button>
 
@@ -161,18 +163,13 @@
 
         </StackPanel>
 
-        <StackPanel Margin="0,0,77,4">
-
-            <Label Margin="115,400,10,-30"
-                   Height="45"
-                   Width="600"/>
-
-        </StackPanel>
 
 
+
+        <Label Margin="120,400,85,-415"
+                   Height="45" Grid.ColumnSpan="3"/>
         <StackPanel Margin="0,30,80,-420"
-                Background="#36393F"
-                Width="130"/>
+                Background="#36393F"/>
         <TextBlock Text="Online"
             Height="20"
             Width="40"
@@ -180,7 +177,7 @@
             Background="Transparent"
             Foreground="Gray"
             FontWeight="SemiBold"
-            Margin="-189,-30,-30,-80"
+            Margin="0,30,160,-20"
         />
         <TextBlock Text="Offline"
             Height="20"
@@ -189,10 +186,10 @@
             Background="Transparent"
             FontWeight="SemiBold"
           
-            Margin="0,-150,0,-200"
+            Margin="78,30,78,-20"
             />
-        <TextBlock Margin="120,60,-600,-369"
-                   Background="Gray"/>
+        <TextBlock Margin="120,60,0,-369"
+                   Background="Gray" Grid.ColumnSpan="3"/>
     </Grid>
 
 </Window>

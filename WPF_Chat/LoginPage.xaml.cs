@@ -93,7 +93,7 @@ public partial class LoginPage : Page
 
     private void RegisterButton_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
     {
-        LoginPage page = new LoginPage();
+        RegistrationPage page = new RegistrationPage();
         this.Content = page;
     }
 }
