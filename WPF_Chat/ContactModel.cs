@@ -15,5 +15,5 @@ public class ContactModel
     
     public ObservableCollection<MessageModel>? Messages { get; set; }
 
-    public string LastMessage => Messages.Last().Message;
+    public string? LastMessage => Messages.Last().Message;
 }

@@ -11,10 +11,7 @@ public partial class LoginPage : Page
 {
     private WindowState WindowState;
 
-    public LoginPage()
-    {
-        InitializeComponent();
-    }
+    public LoginPage() => InitializeComponent();
 
     private void LoginCloseButton_OnClick(object sender, RoutedEventArgs e)
     {
@@ -50,10 +47,9 @@ public partial class LoginPage : Page
        
     }
 
-    private void LoginButton_OnClick(object sender, RoutedEventArgs e)
+    private void LoginButton_OnClick(object sender, RoutedEventArgs e, MainWindow? mainWindow)
     {
-       MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
-       mainWindow.Visibility = Visibility.Visible;
+        mainWindow.Visibility = Visibility.Visible;
        Window win = (Window)this.Parent;
        win.Close();
     }
