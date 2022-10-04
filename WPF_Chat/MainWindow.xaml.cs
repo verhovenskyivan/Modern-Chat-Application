@@ -17,6 +17,9 @@ using Microsoft.Win32;
 using AForge.Video;
 using System.Security.Cryptography.X509Certificates;
 using System.Drawing;
+using AForge.Video;
+using AForge.Video.DirectShow;
+using AForge.Imaging.Filters;
 
 namespace WPF_Chat
 {
@@ -30,7 +33,7 @@ namespace WPF_Chat
             InitializeComponent();
         }
 
-       
+
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
@@ -63,23 +66,23 @@ namespace WPF_Chat
 
         private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
         {
-            
+
         }
-        
+
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
             if (e.LeftButton == MouseButtonState.Pressed)
             {
-                DragMove(); 
+                DragMove();
             }
         }
 
         private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-                  
-           
+
+
         {
             [DllImport("winmm.dll", EntryPoint = "mciSendStringA", CharSet = CharSet.Ansi, SetLastError = true, ExactSpelling = true)]
-             static extern int mciSendString(string lpstrCommand, string lpstrReturnString, int uReturnLength, int hwndCallback);
+            static extern int mciSendString(string lpstrCommand, string lpstrReturnString, int uReturnLength, int hwndCallback);
 
             static void Main(string[] args)
             {
@@ -121,7 +124,23 @@ namespace WPF_Chat
                 stream.Start();
             }
         }
+
+        FilterInfoCollection filterInfoCollection;
+        VideoCaptureDevice videoCaptureDevice;
+        private void Image_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            videoCaptureDevice= new VideoCaptureDevice(filterInfoCollection[cboCamera.Selecte]);
         }
+
+        private void Image_Load(object sender, EventArgs e)
+        {
+            filterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+            foreach (FilterInfo filterInfo in filterInfoCollection)
+                cboCamera.Items.Add(filterInfo.Name);
+            cboCamera.SelectIndex = 0;
+            videoCaptureDevice = new VideoCaptureDevice();
+        }
+    }
 
     public class Form
     {

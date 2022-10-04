@@ -96,7 +96,7 @@
                     Padding="-3"
                     Margin="-90,-20,-720,-50">
 
-                <Image Source="./Icons/Video.png" Cursor="Hand"/>
+                <Image Source="./Icons/Video.png" Cursor="Hand" MouseLeftButtonUp="Image_MouseLeftButtonUp"/>
 
             </Button>
 
