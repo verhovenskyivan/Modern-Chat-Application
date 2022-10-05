@@ -129,7 +129,7 @@ namespace WPF_Chat
         VideoCaptureDevice videoCaptureDevice;
         private void Image_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            videoCaptureDevice= new VideoCaptureDevice(filterInfoCollection[cboCamera.Selecte]);
+            videoCaptureDevice= new VideoCaptureDevice(filterInfoCollection[cboCamera.Select]);
         }
 
         private void Image_Load(object sender, EventArgs e)
@@ -139,6 +139,12 @@ namespace WPF_Chat
                 cboCamera.Items.Add(filterInfo.Name);
             cboCamera.SelectIndex = 0;
             videoCaptureDevice = new VideoCaptureDevice();
+        }
+
+
+        private void Image_MouseLeftButtonUp_1(object sender, MouseButtonEventArgs e)
+        {
+
         }
     }
 

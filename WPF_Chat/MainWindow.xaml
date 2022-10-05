@@ -83,7 +83,7 @@
                 Padding="-3"
                 Margin="-150,-20,-710,-50">
 
-                <Image Source="./Icons/Audio.png" Cursor="Hand"/>
+                <Image Source="./Icons/Audio.png" Cursor="Hand" MouseLeftButtonUp="Image_MouseLeftButtonUp_1"/>
 
             </Button>
 
@@ -166,7 +166,7 @@
 
 
 
-        <Label Margin="120,400,85,-415"
+        <Label Margin="78,405,127,-420"
                    Height="45" Grid.ColumnSpan="3"/>
         <StackPanel Margin="0,30,80,-420"
                 Background="#36393F"/>
