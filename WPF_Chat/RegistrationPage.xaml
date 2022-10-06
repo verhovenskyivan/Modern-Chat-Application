@@ -82,7 +82,7 @@
                            Content="Login"
                            Margin="-10,9,0,0"
                            Height="25"
-                           Width="58" Cursor="Hand"/>
+                           Width="58" Cursor="Hand" Click="LoginButton_Click"/>
                 
                    <Button x:Name="HelpButton"
                            Content="Help"

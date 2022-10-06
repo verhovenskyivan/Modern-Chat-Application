@@ -38,4 +38,10 @@ public partial class RegistrationPage : Window
       RegistrationPage page = new RegistrationPage();
         this.Content = loginPage;
     }
+
+    private void LoginButton_Click(object sender, RoutedEventArgs e, object mainWindow)
+    {
+        RegistrationPage page = new RegistrationPage();
+        this.Content = mainWindow;
+    }
 }
