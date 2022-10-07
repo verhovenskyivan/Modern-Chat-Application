@@ -1,5 +1,7 @@
+using System;
 using System.Windows;
 using System.Windows.Input;
+using System.Windows.Navigation;
 
 namespace WPF_Chat;
 
@@ -41,7 +43,17 @@ public partial class RegistrationPage : Window
 
     private void LoginButton_Click(object sender, RoutedEventArgs e, object mainWindow)
     {
-        RegistrationPage page = new RegistrationPage();
-        this.Content = mainWindow;
+        NavigationWindow login = new NavigationWindow();
+        login.Source = new Uri("MainWindow", UriKind.Relative);
+        login.Show();
+        this.Visibility = Visibility.Visible;
+    }
+
+    private void LoginButton_Click(object sender, RoutedEventArgs e)
+    {
+        NavigationWindow register = new NavigationWindow();
+        register.Source = new Uri("MainWindow", UriKind.Relative);
+        register.Show();
+        this.Visibility = Visibility.Visible;
     }
 }
