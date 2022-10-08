@@ -92,4 +92,9 @@ public partial class LoginPage : Page
         RegistrationPage page = new RegistrationPage();
         this.Content = page;
     }
+
+    private void LoginButton_OnClick()
+    {
+
+    }
 }

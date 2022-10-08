@@ -37,8 +37,10 @@ public partial class RegistrationPage : Window
 
     private void LoginButton_MouseLeftButtonDown(object sender, MouseButtonEventArgs e, object loginPage)
     {
-      RegistrationPage page = new RegistrationPage();
-        this.Content = loginPage;
+        NavigationWindow login = new NavigationWindow();
+        login.Source = new Uri("MainWindow", UriKind.Relative);
+        login.Show();
+        this.Visibility = Visibility.Visible;
     }
 
     private void LoginButton_Click(object sender, RoutedEventArgs e, object mainWindow)
