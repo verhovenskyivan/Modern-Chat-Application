@@ -93,8 +93,11 @@ public partial class LoginPage : Page
         this.Content = page;
     }
 
-    private void LoginButton_OnClick()
+    private void LoginButton_OnClick(object sender, RoutedEventArgs e)
     {
-
+        NavigationWindow login = new NavigationWindow();
+        login.Source = new Uri("MainWindow", UriKind.Relative);
+        login.Show();
+        this.Visibility = Visibility.Visible;
     }
 }
