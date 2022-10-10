@@ -23,16 +23,19 @@ public partial class RegistrationPage : Window
     private void RegisterCloseButton_OnClick(object sender, RoutedEventArgs e)
     {
         Application.Current.Shutdown();
+        this.Cursor = Cursors.Hand;
     }
 
     private void RegisterMinimizeButton_OnClick(object sender, RoutedEventArgs e)
     {
         this.WindowState = WindowState.Minimized;
+        this.Cursor = Cursors.Hand;
     }
 
     private void RegisterMaximizeButton_OnClick(object sender, RoutedEventArgs e)
     {
         this.WindowState = WindowState.Maximized;
+        this.Cursor = Cursors.Hand;
     }
 
     private void LoginButton_MouseLeftButtonDown(object sender, MouseButtonEventArgs e, object loginPage)
