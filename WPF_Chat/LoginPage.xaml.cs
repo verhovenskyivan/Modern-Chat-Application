@@ -34,7 +34,8 @@ public partial class LoginPage : Page
 
     private void LoginField_OnMouseLeave(object sender, MouseEventArgs e)
     {
-        
+        Application.Current.Shutdown();
+        this.Cursor = Cursors.Hand;
     }
 
     private void UIElement_OnMouseMove(object sender, MouseEventArgs e)
@@ -44,7 +45,8 @@ public partial class LoginPage : Page
 
     private void LoginField_OnMouseEnter(object sender, MouseEventArgs e)
     {
-       
+        Application.Current.Shutdown();
+        this.Cursor = Cursors.Hand;
     }
 
     private void LoginButton_OnClick(object sender, RoutedEventArgs e, MainWindow? mainWindow)
