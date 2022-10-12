@@ -76,6 +76,8 @@ public partial class LoginPage : Page
         {
             DragMove(); 
         }
+        Application.Current.Shutdown();
+        this.Cursor = Cursors.Hand;
     }
 
     private void DragMove()
