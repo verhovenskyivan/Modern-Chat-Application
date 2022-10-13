@@ -83,6 +83,7 @@ public partial class LoginPage : Page
     private void DragMove()
     {
         throw new System.NotImplementedException();
+        this.Cursor = Cursors.Hand;
     }
 
     private void LoginButton_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
